@@ -10,7 +10,6 @@ public class HelloJob implements Job{
 	public void execute(JobExecutionContext context) throws JobExecutionException {
 		JobDetail detail = context.getJobDetail(); 
 		String name = detail.getJobDataMap().getString("name");
-		System.out.println("say hello " + name );
 	}
 
 }
